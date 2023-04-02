@@ -1,3 +1,3 @@
 # DataAnalystPortfolioProjects
 
-![Alt text](relative%20path/to/img.jpg?raw=true "Title")
+![Alt text](relative%20path/to/Airbnb_Dashboard.png?raw=true "Airbnb Dashboard")

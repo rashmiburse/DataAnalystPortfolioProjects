@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Age' datatype='real' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='38.'>
+        <calculation class='tableau' formula='38.' />
+        <range granularity='1.0' max='81.0' min='21.0' />
+      </column>
+      <column caption='BloodPressure' datatype='integer' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='40'>
+        <calculation class='tableau' formula='40' />
+        <range granularity='1' max='122' min='24' />
+      </column>
+      <column caption='BMI' datatype='real' name='[Parameter 3]' param-domain-type='range' role='measure' type='quantitative' value='27.'>
+        <calculation class='tableau' formula='27.' />
+        <range granularity='1.0' max='68.0' min='18.0' />
+      </column>
+      <column caption='Insulin' datatype='real' name='[Parameter 4]' param-domain-type='range' role='measure' type='quantitative' value='174.'>
+        <calculation class='tableau' formula='174.' />
+        <range granularity='1.0' max='846.0' min='14.0' />
+      </column>
+      <column caption='SkinThickness' datatype='real' name='[Parameter 5]' param-domain-type='range' role='measure' type='quantitative' value='20.'>
+        <calculation class='tableau' formula='20.' />
+        <range granularity='1.0' max='50.0' min='7.0' />
+      </column>
+      <column caption='Glucose' datatype='integer' name='[Parameter 6]' param-domain-type='range' role='measure' type='quantitative' value='58'>
+        <calculation class='tableau' formula='58' />
+        <range granularity='1' max='199' min='44' />
+      </column>
+      <column caption='Pregnancies' datatype='integer' name='[Parameter 7]' param-domain-type='range' role='measure' type='quantitative' value='2'>
+        <calculation class='tableau' formula='2' />
+        <range granularity='1' max='17' min='0' />
+      </column>
+    </datasource>
+    <datasource caption='diabetes' inline='true' name='federated.13818om1lfej6h17ihlqa1t9t8p2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='diabetes' name='textscan.1ah6jvf0oxlaxo1axehvu11xnci5'>
+            <connection class='textscan' directory='C:/Users/Rashmi/Desktop/Data Analyst Project/Tableau+ Advanced AI PyTab' filename='diabetes.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ah6jvf0oxlaxo1axehvu11xnci5' name='diabetes.csv' table='[diabetes#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IE' separator=','>
+            <column datatype='integer' name='Pregnancies' ordinal='0' />
+            <column datatype='integer' name='Glucose' ordinal='1' />
+            <column datatype='integer' name='BloodPressure' ordinal='2' />
+            <column datatype='integer' name='SkinThickness' ordinal='3' />
+            <column datatype='integer' name='Insulin' ordinal='4' />
+            <column datatype='real' name='BMI' ordinal='5' />
+            <column datatype='real' name='DiabetesPedigreeFunction' ordinal='6' />
+            <column datatype='integer' name='Age' ordinal='7' />
+            <column datatype='integer' name='Outcome' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ah6jvf0oxlaxo1axehvu11xnci5' name='diabetes.csv' table='[diabetes#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IE' separator=','>
+            <column datatype='integer' name='Pregnancies' ordinal='0' />
+            <column datatype='integer' name='Glucose' ordinal='1' />
+            <column datatype='integer' name='BloodPressure' ordinal='2' />
+            <column datatype='integer' name='SkinThickness' ordinal='3' />
+            <column datatype='integer' name='Insulin' ordinal='4' />
+            <column datatype='real' name='BMI' ordinal='5' />
+            <column datatype='real' name='DiabetesPedigreeFunction' ordinal='6' />
+            <column datatype='integer' name='Age' ordinal='7' />
+            <column datatype='integer' name='Outcome' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[diabetes.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pregnancies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pregnancies]</local-name>
+            <parent-name>[diabetes.csv]</parent-name>
+            <remote-alias>Pregnancies</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diabetes.csv_C976E66BF64D48A5B705EF81CA865295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Glucose</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Glucose]</local-name>
+            <parent-name>[diabetes.csv]</parent-name>
+            <remote-alias>Glucose</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diabetes.csv_C976E66BF64D48A5B705EF81CA865295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BloodPressure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BloodPressure]</local-name>
+            <parent-name>[diabetes.csv]</parent-name>
+            <remote-alias>BloodPressure</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diabetes.csv_C976E66BF64D48A5B705EF81CA865295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SkinThickness</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SkinThickness]</local-name>
+            <parent-name>[diabetes.csv]</parent-name>
+            <remote-alias>SkinThickness</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diabetes.csv_C976E66BF64D48A5B705EF81CA865295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Insulin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Insulin]</local-name>
+            <parent-name>[diabetes.csv]</parent-name>
+            <remote-alias>Insulin</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diabetes.csv_C976E66BF64D48A5B705EF81CA865295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BMI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BMI]</local-name>
+            <parent-name>[diabetes.csv]</parent-name>
+            <remote-alias>BMI</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diabetes.csv_C976E66BF64D48A5B705EF81CA865295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DiabetesPedigreeFunction</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DiabetesPedigreeFunction]</local-name>
+            <parent-name>[diabetes.csv]</parent-name>
+            <remote-alias>DiabetesPedigreeFunction</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diabetes.csv_C976E66BF64D48A5B705EF81CA865295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[diabetes.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diabetes.csv_C976E66BF64D48A5B705EF81CA865295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outcome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Outcome]</local-name>
+            <parent-name>[diabetes.csv]</parent-name>
+            <remote-alias>Outcome</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diabetes.csv_C976E66BF64D48A5B705EF81CA865295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age_data' datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column caption='BMI_data' datatype='real' name='[BMI]' role='measure' type='quantitative' />
+      <column caption='Blood Pressure_data' datatype='integer' name='[BloodPressure]' role='measure' type='quantitative' />
+      <column caption='Diabetes_Predictor' datatype='real' name='[Calculation_1851542413919883265]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SCRIPT_REAL(&quot;return tabpy.query(&apos;diabetes_predictor&apos;,_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,_arg7)[&apos;response&apos;]&quot;,&#13;&#10;[Parameters].[Parameter 7],[Parameters].[Parameter 6],[Parameters].[Parameter 2],[Parameters].[Parameter 5],[Parameters].[Parameter 4],[Parameters].[Parameter 3],[Parameters].[Parameter 1])'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Diabetes Pedigree Function' datatype='real' name='[DiabetesPedigreeFunction]' role='measure' type='quantitative' />
+      <column caption='Glucose_data' datatype='integer' name='[Glucose]' role='measure' type='quantitative' />
+      <column caption='Insulin_data' datatype='integer' name='[Insulin]' role='measure' type='quantitative' />
+      <column caption='Outcome_data' datatype='integer' name='[Outcome]' role='measure' type='quantitative' />
+      <column caption='Pregnancies_data' datatype='integer' name='[Pregnancies]' role='measure' type='quantitative' />
+      <column caption='Skin Thickness_data' datatype='integer' name='[SkinThickness]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='diabetes.csv' datatype='table' name='[__tableau_internal_object_id__].[diabetes.csv_C976E66BF64D48A5B705EF81CA865295]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ireland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Age' datatype='real' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='38.'>
+          <calculation class='tableau' formula='38.' />
+          <range granularity='1.0' max='81.0' min='21.0' />
+        </column>
+        <column caption='BloodPressure' datatype='integer' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='40'>
+          <calculation class='tableau' formula='40' />
+          <range granularity='1' max='122' min='24' />
+        </column>
+        <column caption='BMI' datatype='real' name='[Parameter 3]' param-domain-type='range' role='measure' type='quantitative' value='27.'>
+          <calculation class='tableau' formula='27.' />
+          <range granularity='1.0' max='68.0' min='18.0' />
+        </column>
+        <column caption='Insulin' datatype='real' name='[Parameter 4]' param-domain-type='range' role='measure' type='quantitative' value='174.'>
+          <calculation class='tableau' formula='174.' />
+          <range granularity='1.0' max='846.0' min='14.0' />
+        </column>
+        <column caption='SkinThickness' datatype='real' name='[Parameter 5]' param-domain-type='range' role='measure' type='quantitative' value='20.'>
+          <calculation class='tableau' formula='20.' />
+          <range granularity='1.0' max='50.0' min='7.0' />
+        </column>
+        <column caption='Glucose' datatype='integer' name='[Parameter 6]' param-domain-type='range' role='measure' type='quantitative' value='58'>
+          <calculation class='tableau' formula='58' />
+          <range granularity='1' max='199' min='44' />
+        </column>
+        <column caption='Pregnancies' datatype='integer' name='[Parameter 7]' param-domain-type='range' role='measure' type='quantitative' value='2'>
+          <calculation class='tableau' formula='2' />
+          <range granularity='1' max='17' min='0' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='diabetes.csv' id='diabetes.csv_C976E66BF64D48A5B705EF81CA865295'>
+            <properties context=''>
+              <relation connection='textscan.1ah6jvf0oxlaxo1axehvu11xnci5' name='diabetes.csv' table='[diabetes#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IE' separator=','>
+                  <column datatype='integer' name='Pregnancies' ordinal='0' />
+                  <column datatype='integer' name='Glucose' ordinal='1' />
+                  <column datatype='integer' name='BloodPressure' ordinal='2' />
+                  <column datatype='integer' name='SkinThickness' ordinal='3' />
+                  <column datatype='integer' name='Insulin' ordinal='4' />
+                  <column datatype='real' name='BMI' ordinal='5' />
+                  <column datatype='real' name='DiabetesPedigreeFunction' ordinal='6' />
+                  <column datatype='integer' name='Age' ordinal='7' />
+                  <column datatype='integer' name='Outcome' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Diabetes Predictor'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Probability of having diabetes based on the current parameter values</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diabetes' name='federated.13818om1lfej6h17ihlqa1t9t8p2' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Age' datatype='real' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='38.'>
+              <calculation class='tableau' formula='38.' />
+              <range granularity='1.0' max='81.0' min='21.0' />
+            </column>
+            <column caption='BloodPressure' datatype='integer' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='40'>
+              <calculation class='tableau' formula='40' />
+              <range granularity='1' max='122' min='24' />
+            </column>
+            <column caption='BMI' datatype='real' name='[Parameter 3]' param-domain-type='range' role='measure' type='quantitative' value='27.'>
+              <calculation class='tableau' formula='27.' />
+              <range granularity='1.0' max='68.0' min='18.0' />
+            </column>
+            <column caption='Insulin' datatype='real' name='[Parameter 4]' param-domain-type='range' role='measure' type='quantitative' value='174.'>
+              <calculation class='tableau' formula='174.' />
+              <range granularity='1.0' max='846.0' min='14.0' />
+            </column>
+            <column caption='SkinThickness' datatype='real' name='[Parameter 5]' param-domain-type='range' role='measure' type='quantitative' value='20.'>
+              <calculation class='tableau' formula='20.' />
+              <range granularity='1.0' max='50.0' min='7.0' />
+            </column>
+            <column caption='Glucose' datatype='integer' name='[Parameter 6]' param-domain-type='range' role='measure' type='quantitative' value='58'>
+              <calculation class='tableau' formula='58' />
+              <range granularity='1' max='199' min='44' />
+            </column>
+            <column caption='Pregnancies' datatype='integer' name='[Parameter 7]' param-domain-type='range' role='measure' type='quantitative' value='2'>
+              <calculation class='tableau' formula='2' />
+              <range granularity='1' max='17' min='0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.13818om1lfej6h17ihlqa1t9t8p2'>
+            <column caption='Diabetes_Predictor' datatype='real' name='[Calculation_1851542413919883265]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SCRIPT_REAL(&quot;return tabpy.query(&apos;diabetes_predictor&apos;,_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,_arg7)[&apos;response&apos;]&quot;,&#13;&#10;[Parameters].[Parameter 7],[Parameters].[Parameter 6],[Parameters].[Parameter 2],[Parameters].[Parameter 5],[Parameters].[Parameter 4],[Parameters].[Parameter 3],[Parameters].[Parameter 1])'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[Calculation_1851542413919883265]' derivation='User' name='[usr:Calculation_1851542413919883265:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13818om1lfej6h17ihlqa1t9t8p2].[usr:Calculation_1851542413919883265:qk:1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{338E6A1F-DAEB-4C9B-88DF-F99F6B2DE6CF}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Diabetes Predictor'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 3]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 4]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 5]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 6]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 7]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{30AD40DB-DE64-4646-968D-7C301038944C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='30' name='Diabetes Predictor' width='80'>
+      iVBORw0KGgoAAAANSUhEUgAAAFAAAAAeCAYAAAC7Q5mxAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADTElEQVRoge2aX2hbVRzHP5O+zMLAWSoDoTgEQWGgHoYtTVkQMjGinW11o3ALUyxMitBV
+      YQ4zGqmBFhJmOowPGUtpGX3YQy0BsfiQgpW5TLeytdTS0rE/bUdXaTUVdy/8fMgmaZt0yY5w
+      KZzP47nf3+/kfO65/yA7REQwPDZPuP0DtjtGoCZGoCZGoCZGoCZGoCZGoCZGoCZGoCZGoCZG
+      oCZGoCZGoCZGoCZGoCZGoCauC1wdT9BR70Ephae+g8T4apGVDpd7DqKU4tRobsNphiPHOOzL
+      9lTKg+9oiJGb99dV3785QuRYI95qhVLVeBs7GPy99AziJnP9YtVaEp/IiC22ZCbiYtVa0j/3
+      6FL7eq80Wf1yLvCqBFI54z99LcdjozK9nBFbRMTOyOwPQWms/VS+/+tB6EpY/P5PJDY6Kxlb
+      ROQfWbzUK1apGRFxUaAtF0M+aU+urBtdSbaLL3Qxu/iCpdeltykrOrVBYKG5fvw8Jzc3IzN5
+      JljXq5iMuCowJQFvt6Q3jael2xuQQk7smbhYVr883KRbCbQzyzJ9aVCCh9+RE8k7W5yUFbna
+      a4k/kJKVEjNlpd+1/kf2VFKxabCCyj0F8s4sfZ0pfMEEVVv1vZGguSHKFMAzHj7r7uPdl3aR
+      b7HO8hjRj08y9koXfV/UsKvEjLsC5++yBBtkLHF3Hp7bFHaYHejit7e7iW5pD6hqYSDdAs4a
+      f8xd5ru+Vt68/Raxb5vZ+9+KHZbHIrSe/JWargucr9mdR8ajMy4KrKCyfIHFDFCeM5xZZKE8
+      3878hYHYVX62/ajQhkNJRZIXaLswQEuu3LIneep5Dy3Bal4+fYieoTf4puFpAFZHv8SKV/LV
+      0Hn25dt2RWa250Mkh+IeIiIz8ffkUGzq4STS7g9IqvANr7iMiLj4HljG/iMWS6E2zk6u4eCw
+      NnmWttAS1pH9j31pjEU/IjJ8jVurD97XnDXm0wkigzave/YCcG9kmIWmo9QV2lVFZrKrcJOq
+      ZqJnHIInDvLarb/Z+ewBPjwTpTnnMlTqFOF0J3VFtlT1TYyfDtManmTxTxvYye59Xj7oOcf7
+      L2aXOzVxhamhBlR0c70/nKazrrgMwA4R89cOHVz/lNvuGIGa/AvCiYJm2j14qAAAAABJRU5E
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
